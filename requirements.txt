@@ -1,1 +1,3 @@
 pytest==6.1.2
+pytest-sugar
+pytest-cov
