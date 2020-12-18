@@ -10,8 +10,7 @@ class CashRegister:
     basketOnHold = None
 
     def __init__(self):
-        self.logger = logging.getLogger(__name__)
-        self.db_connector = ProductDbConnector()
+        pass
 
     def start(self):
         # verification caisse
@@ -28,7 +27,7 @@ class CashRegister:
             self.scan_product(code)
 
     def scan_product(self, code):
-        product = self.db_connector.get_product_by_code(code)
+        product = ProductDbConnector.get_product_by_code(code)
         if product:
             product_to_add = Product(product)
             self.basket.add_product(product_to_add)
