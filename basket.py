@@ -53,6 +53,6 @@ class Basket:
         self.products.remove(product)
 
     def __str__(self):
-        return f'Products: {self.products}'
+        return 'Products: {}'.format(self.products)
 
 

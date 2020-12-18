@@ -7,4 +7,8 @@ class ProductDbConnector:
         self.products = db.products
 
     def get_product_by_code(self, code):
-        return next(item for item in self.products if item["code"] == code)
+        try:
+            return next(item for item in self.products if item["code"] == code)
+
+        except Exception as e:
+            return None
