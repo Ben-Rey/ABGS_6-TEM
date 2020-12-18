@@ -35,9 +35,4 @@ def test_remove_product_from_basket():
 
 def test_basket_on_hold():
     cash_register.put_basket_on_hold()
-
     assert cash_register.basket is None and isinstance(cash_register.basketOnHold, BasketOnHold)
-
-
-
-

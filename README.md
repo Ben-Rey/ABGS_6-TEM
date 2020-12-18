@@ -35,3 +35,7 @@
 * Se placer à la racine du projet.
 
 * Installer les dépendances du projet : pip install -r requirements.txt.
+
+### TEST :
+
+

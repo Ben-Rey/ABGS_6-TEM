@@ -21,8 +21,10 @@ class CashRegister:
     def new_basket(self):
         self.basket = Basket()
         while True:
+            print("--------------------")
             print("Scan a product")
             code = input("code: ")
+            print("--------------------")
             self.scan_product(code)
 
     def scan_product(self, code):

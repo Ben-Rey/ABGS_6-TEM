@@ -11,9 +11,6 @@ class BasketOnHold:
         self.__delattr__('lock')
         return self.basket
 
-    # def add_product(self, product):
-    #     print('oisdvhoij')
-
     def __str__(self):
         return 'On hold'
 
