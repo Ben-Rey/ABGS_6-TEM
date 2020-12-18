@@ -1,33 +1,30 @@
 class BillBuilder(Builder):
 
     def __init__(self) -> None:
-        self.reset()
-
-    def reset(self) -> None:
-        self._product = Product1()
+        self.shop_name = None
+        self.shop_adress = None
+        self.cash_number = None
+        self.casher_id = None
+        self.product_list = None
+        self.payment = None
+        self.date = None
 
     @property
-    def product(self) -> Product1:
-        product = self._product
-        self.reset()
-        return product
+    def get_receip(self):
+        return self
 
-    @abstractproperty
-    def product(self) -> None:
-        pass
+    def add_shop_infos(self, infos ) -> None:
+        self.shop_name = infos['shop_informations']['name']
+        self.shop_adress = infos['shop_informations']['adress']
 
-    @abstractmethod
-    def add_shop_infos(self) -> None:
-        pass
+    def add_cash_infos(self, cash_number) -> None:
+        self.cash_number = cash_number
 
-    @abstractmethod
-    def add_cash_infos(self) -> None:
-        pass
+    def add_date(self, date) -> None:
+        self.date = date
 
-    @abstractmethod
-    def add_date(self) -> None:
-        pass
+    def add_product_list(self, product_list) -> None:
+        self.product_list = product_list
 
-    @abstractmethod
-    def add_product_list(self) -> None:
-        pass
+    def ask_name(self) -> None:
+        

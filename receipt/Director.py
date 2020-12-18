@@ -13,13 +13,8 @@ class Director:
     def builder(self, builder: Builder) -> None:
         self._builder = builder
 
-    def build_minimal_viable_product(self) -> None:
-        self.builder.produce_part_a()
-
-    def build_full_featured_product(self) -> None:
-        self.builder.produce_part_a()
-        self.builder.produce_part_b()
-        self.builder.produce_part_c()
+    def createReceip(self, builder):
+        self.builder.get_receip()
 
     def get_data(product_list, payment, cash_number, casher_id)
         return data = {
@@ -34,4 +29,5 @@ class Director:
             }
         }
 
+    def createReceip()
     
