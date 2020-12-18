@@ -3,6 +3,7 @@ from basket import Basket, BasketOnHold
 from product import Product
 from productDbConnector import ProductDbConnector
 import logging
+# import payment
 
 
 class CashRegister:
@@ -43,6 +44,8 @@ class CashRegister:
         return self.basket.totalPrice
 
     def pay(self):
+        # payment = Payment()
+        # payment.ask_payment_methode()
         print('Pay')
 
     def put_basket_on_hold(self):
