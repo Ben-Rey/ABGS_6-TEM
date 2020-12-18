@@ -1,6 +1,6 @@
 import datetime
 
-class Director:
+class TicketDirector:
 
     def __init__(self) -> None:
         self._builder = None
