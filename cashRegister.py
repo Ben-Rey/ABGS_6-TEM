@@ -26,8 +26,8 @@ class CashRegister:
         return self.basket.totalPrice
         print('Pay')
 
-    # def on_hold(self):
-    #     print('On hold')
+    def on_hold(self):
+        print('On hold')
     #
     # def quit(self):
     #     print("ByeBye")

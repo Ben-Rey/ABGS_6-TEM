@@ -27,4 +27,15 @@ def test_remove_product_from_basket():
 
 
 
+def test_basket_on_hold():
+    # We put the basket on hold
+    product = cash_register.basket.products[0]
+    cash_register.delete_product_from_basket(product)
+    assert len(cash_register.basket.products) == 2 and product not in cash_register.basket.products
+
+    # We try to delete again the same product
+    assert cash_register.delete_product_from_basket(product) == "Product not found"
+
+
+
 
